@@ -1,5 +1,5 @@
 # yaoj003.github.io
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head></head>
 <body>
