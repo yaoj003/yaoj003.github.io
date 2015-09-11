@@ -1,8 +1,9 @@
 # yaoj003.github.io
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+<title>Jessie's Site</title>
+</head>
 <body>
-<h1> It worked!
 </body>
 </html>
