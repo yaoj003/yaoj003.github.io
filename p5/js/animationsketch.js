@@ -3,7 +3,7 @@ var pizza;
 
 function preload() {
 
-pizza = loadAnimation("pizza.png");
+pizza = loadAnimation("../img/pizza.png");
 
 
 function setup() {

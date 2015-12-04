@@ -6,11 +6,11 @@ var imgd;
 var imge;
 
 function preload() {
-	imga = loadImage("pizza.png");
-	imgb = loadImage("burger.png");
-	imgc = loadImage("boy.png");
-	imgd = loadImage("conveyor.png");
-	imge = loadImage("speechbubble.png");
+	imga = loadImage("../img/pizza.png");
+	imgb = loadImage("../img/burger.png");
+	imgc = loadImage("../img/boy.png");
+	imgd = loadImage("../img/conveyor.png");
+	imge = loadImage("../img/speechbubble.png");
 }
 
 function setup() {
