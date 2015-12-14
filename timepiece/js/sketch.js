@@ -14,10 +14,10 @@ function preload() {
 }
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
-  x = windowWidth;
-  y = windowHeight*2/3;
-	z = windowWidth/2;
+	createCanvas(1000, 600);
+  x = 1000;
+  y = 400;
+	z = 500;
 	frameRate(60);
 }
 
@@ -27,50 +27,50 @@ function draw() {
 
 // little fat boy
 	//face
-	image(imgc, windowWidth/2+95, windowWidth/13, imgc.width, imgc.height);
+	image(imgc, 560, 65, imgc.width, imgc.height);
 
-  // mouth
+	// mouth
 	fill(0);
-	ellipse(width*3/4+30, height*3/4, 115, 115);
+	ellipse(810, 445, 115, 115);
 
   // eyes
   fill(0);
-  ellipse(width*3/4-30, height*3/4-80, 40, 40);
-  ellipse(width*3/4+100, height*3/4-80, 40, 40);
+  ellipse(730, 350, 40, 40);
+  ellipse(900, 350, 40, 40);
 
   fill(255);
-	if(x > width*3/4-100){
-  	ellipse(width*3/4-30, height*3/4-70, 10, 10);
-  	ellipse(width*3/4+100, height*3/4-70, 10, 10);
+	if(x > 650){
+  	ellipse(724, 350, 10, 10);
+  	ellipse(895, 350, 10, 10);
 	} else{
-  	ellipse(width*3/4-40, height*3/4-80, 10, 10);
-  	ellipse(width*3/4+90, height*3/4-80, 10, 10);
+  	ellipse(730, 357, 10, 10);
+  	ellipse(900, 357, 10, 10);
 	}
 
 // conveyor belt
-	image(imgd, 260, windowHeight/3+50, imgd.width/3, imgd.height/3);
+	image(imgd, 120, 250, imgd.width/3, imgd.height/3);
 
 
 // burger
 	image(imgb, x, y, imgb.width/8, imgb.height/8);
-	x = x + windowWidth/240;
+	x = x + 4;
 
 	// return to start
-  if (x > width*3/4){
-      x = width/4;
+  if (x > 750){
+      x = 250;
   }
 
 // pizza
 	image(imga, z, y, imga.width/4, imga.height/4);
-	z = z + windowWidth/240;
+	z = z + 4;
 
-	if (z > width*3/4){
-			z = width/4;
+	if (z > 750){
+			z = 250;
 		}
 
 //speech bubble
-		if(mouseX>windowWidth*2/3){
-			image(imge, windowWidth/2-50, windowHeight/5,imge.width/3, imge.height/3);
+		if(mouseX>650){
+			image(imge, 450, 100,imge.width/3, imge.height/3);
 			}
 
 // time and date
@@ -82,13 +82,13 @@ function draw() {
 	var monthText = setDigits(month(),2);
 	var yearText = setDigits(year(),2);
 
-	  text(monthText+'/'+dayText+'/'+yearText, 370, windowHeight/3+90);
+	  text(monthText+'/'+dayText+'/'+yearText, 370, 150);
 
 	var hourText = hour();
 	var minuteText = setDigits(minute(), 2);
 	var secondText = setDigits(second(), 2);
 
-		text(hourText+':'+minuteText+':'+secondText, 370, windowHeight/3+130);
+		text(hourText+':'+minuteText+':'+secondText, 370, 200);
 
 
 
