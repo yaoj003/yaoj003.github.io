@@ -48,11 +48,11 @@ $('.parent').scroll(function() {
           $('.img7').css({opacity:0});  
         }
         
-        if(scrollTop > 2400){
-          $('.img8').css({opacity:100});   
-        }else{
-          $('.img8').css({opacity:0});  
-        }
+        // if(scrollTop > 2400){
+        //   $('.img8').css({opacity:100});   
+        // }else{
+        //   $('.img8').css({opacity:0});  
+        // }
         
         if(scrollTop > 2500){
           $('.b1').css({opacity:100});  
@@ -66,11 +66,11 @@ $('.parent').scroll(function() {
            $('.b2').css({opacity:0}); 
         }
         
-        //  if(scrollTop > 2900){
-        //  $('.img9').css({opacity:100});   
-        // }else{
-        //   $('.img9').css({opacity:0});   
-        // }
+         if(scrollTop > 2900){
+         $('.img9').css({opacity:100});   
+        }else{
+          $('.img9').css({opacity:0});   
+        }
         
         if(scrollTop > 3000){
          $('.c1').css({opacity:100});   
@@ -88,7 +88,7 @@ $('.parent').scroll(function() {
        $('.img6').css({opacity:0});
        $('.img7').css({opacity:0});
        $('.img8').css({opacity:0});
-    //   $('.img9').css({opacity:0});
+      $('.img9').css({opacity:0});
        $('.b1').css({opacity:0}); 
        $('.b2').css({opacity:0}); 
        $('.c1').css({opacity:0}); 

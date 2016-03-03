@@ -1,10 +1,11 @@
-/*::-webkit-scrollbar { */
-/*    display: none; */
-/*}*/
+::-webkit-scrollbar { 
+    display: none; 
+}
 
 .main{
   display: block;
   padding: 2% 20% 0 20%;
+
 }
 
 .parent{
@@ -19,10 +20,6 @@
 
 }
 
-.scrollable {
-  display:inline-block;
-}
-
 .child{
   display: block;
 }
@@ -35,6 +32,7 @@ h1{
   text-align: center;
   line-height: 20px;
   font-weight: bold;
+
 }
 
 h3{
@@ -44,6 +42,7 @@ h3{
   line-height: 20px;
   font-size: 18px;
   font-weight: normal;
+
 }
 
 h4{
@@ -54,6 +53,7 @@ h4{
   text-align: justify; 
   word-spacing: 8px;
   font-weight: normal;
+  
 }
 
 h5{
@@ -64,6 +64,7 @@ h5{
   text-align: justify; 
   word-spacing: 1em;
   font-weight: normal;
+
 }
 
 h6{
@@ -74,6 +75,7 @@ h6{
   text-align: justify; 
   word-spacing: 3em;
   font-weight: normal;
+
 }
 
 last{
@@ -84,6 +86,7 @@ last{
   text-align: justify; 
   word-spacing: 8em;
   font-weight: normal;
+
 }
 
 bold{
@@ -94,20 +97,18 @@ bold{
   text-align: justify; 
   word-spacing: 2px;
   font-weight: bold;
+
 }
 
-.img-container {
-   display:inline-block;
-}
+
 
 .img1 {
     position: absolute;
     left: 37%;
     top: 66%;
-     background-image: url(assets/img/pattern1.png);
-      height: 220;
-      width: 370;
-      
+    background-image: url(assets/img/pattern1.png);
+    height: 220;
+    width: 370;
     z-index: 1;
 
 }
@@ -126,7 +127,7 @@ bold{
     top: 0px;
     z-index: 1;
     transform: rotate(160deg);
- opacity:0
+    opacity:0
 }
 .img4 {
     position: absolute;
@@ -160,22 +161,15 @@ bold{
     transform: rotate(230deg);
     opacity:0
 }
-.img8 {
-    position: absolute;
-    left: 25%;
-    top: 50%;
-    z-index: 1;
-    transform: rotate(310deg);
-    opacity:0
-}
-.img9 {
-    position: absolute;
-    left: 55%;
-    top: 20%;
-    z-index: 1;
-    transform: rotate(330deg);
-    opacity:0
-}
+/*.img8 {*/
+/*    position: absolute;*/
+/*    left: 25%;*/
+/*    top: 50%;*/
+/*    z-index: 1;*/
+/*    transform: rotate(310deg);*/
+/*    opacity:0*/
+/*}*/
+
 .b1 {
     position: absolute;
     left: 10%;
