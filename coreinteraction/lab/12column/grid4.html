@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<meta charset="UTF-8">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="assets/js/sketch.js"></script>
+
+<title>12 COL</title>
+</head>
+
+<script>
+//for each box figure out it's x/y position in relation to the container...then set the image background to that position
+$(document).ready(function(){
+	$("#container div").each(function(){
+		//set the background image for each div to the repositioned main background image
+		var bgPositionString = -($(this).position().left) + "px " + -($(this).position().top) + "px";
+		if ($(this).hasClass("one")){
+			$(this).css("background-image","url('assets/img/school2.png')");
+			$(this).css("background-position",bgPositionString); 
+		}
+		if ($(this).hasClass("two")){
+			$(this).css("background-image","url('assets/img/school6.jpg')");
+			$(this).css("background-position",bgPositionString); 
+		}
+		
+		$('#container').mouseenter(function(){
+		$('.one').css("background-image", "url('assets/img/school2.png')");
+		$('.two').css("background-image", "url('assets/img/school2.png')");
+	});
+	
+		$('#container').mouseleave(function(){
+		$('.one').css("background-image", "url('assets/img/school2.png')");
+		$('.two').css("background-image", "url('assets/img/school6.jpg')");
+	});
+	
+	
+});
+	});
+
+	
+</script>
+
+<style>
+    body{   
+    background-color:#89a19d;
+    overflow: hidden;
+    }
+    
+    #container{
+    padding-top: 15%;
+    padding-left: 55%;
+    padding-right: 15%;
+    padding-bottom: 50%;
+
+    }
+    
+     .one{
+        width:50px;
+        height:50px;
+        float:left;
+        z-index: -1;
+        }
+    
+    .two{
+        width:50px;
+        height:50px;
+        float:left;
+        z-index: -1;
+        }
+        
+        a{
+        position: absolute;
+        z-index: 1;
+        margin-left:45%;
+        margin-top: 10%;
+        -webkit-transform: rotate(); 
+        transform: rotate(350deg);
+        }
+        
+        #sign{
+        position:absolute;
+        z-index: 2;
+        margin-left: 70%;
+        margin-top: 20%;
+        -webkit-transform: rotate(); 
+        transform: rotate(15deg);
+        }
+        
+        p{
+            left: -10%;
+            top: 30%;
+        }
+</style>
+
+<body>
+    
+    <p>
+        we require an assertion of value,<br>
+        we require an assertion of value,<br>
+        we require an assertion of value,<br>
+        we require an assertion of value,<br>
+        we require an assertion of value,<br>
+        we require an assertion of value,<br>
+       
+        we require an assertion of value, we are frightened.<br>
+        we require an assertion of value, we are frightened.<br>
+        we require an assertion of value, we are frightened.<br>
+        we require an assertion of value, we are frightened.
+    </p>
+    <a href="grid5.html">
+       <img id = "shake" src="assets/img/door.png" width=200px height= 300px>
+    </a>
+    
+    <img id="sign" src="assets/img/sign.png" width=200px height=300px>
+ 
+    
+    <div id="container">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+   
+   
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    
+   
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+  
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+  
+
+    </div>
+     
+</body>
+</html>

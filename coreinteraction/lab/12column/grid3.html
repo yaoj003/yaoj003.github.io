@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<meta charset="UTF-8">
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="assets/js/sketch.js"></script>
+
+
+<title>12 COL</title>
+</head>
+<script>
+//for each box figure out it's x/y position in relation to the container...then set the image background to that position
+$(document).ready(function(){
+	$("#container div").each(function(){
+		//set the background image for each div to the repositioned main background image
+		var bgPositionString = -($(this).position().left) + "px " + -($(this).position().top) + "px";
+		if ($(this).hasClass("two")){
+			$(this).css("background-image","url('assets/img/school3.JPG')");
+			$(this).css("background-position",bgPositionString); 
+		}
+		if ($(this).hasClass("three")){
+			$(this).css("background-image","url('assets/img/school4.JPG')");
+			$(this).css("background-position",bgPositionString); 
+		}
+		
+		$('#container').mouseenter(function(){
+		$('.two').css("background-image", "url('assets/img/school2.png')");
+		$('.three').css("background-image", "url('assets/img/school2.png')");
+	});
+	
+		$('#container').mouseleave(function(){
+		$('.two').css("background-image", "url('assets/img/school2.png')");
+		$('.three').css("background-image", "url('assets/img/school6.jpg')");
+	});
+	
+	
+});
+	});
+
+	
+</script>
+
+<style type="text/css">
+    body{
+    background-color: #f3ba4f;
+    padding: 5% 10% 8% 10%;
+    }
+    
+    .one{
+        width:80px;
+        height:160px;
+        background: #f2dd81;
+        float:left;
+        top: 50%;
+        z-index: -1;
+    }
+    
+    .two{
+        width:80px;
+        height:160px;
+        background: #f2d175;
+        float:left;
+        top: 50%;
+          z-index: -1;
+    }
+    
+    .three{
+        width:80px;
+        height:160px;
+        background: #f3ba4f;
+        float:left;
+        top: 50%;
+        z-index: -1;
+    }
+    
+    a{
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        -webkit-transform: rotate(); 
+        transform: rotate(350deg);
+    }
+    
+    .pic2{
+        z-index: 1;
+        position: absolute;
+        top: 10%;
+        left: 45%;
+        -webkit-transform: rotate(); 
+        transform: rotate(20deg);
+    }
+    
+    p{
+        left: -4%;
+        right: 8%;
+        text-align: right;
+        color: white;
+    }
+</style>
+<body>
+    
+    <p>
+    And they said, is death that which gives meaning to life? And I said no, life is that which gives meaning to life. Then they said, but isn’t death, considered as a fundamental datum, the means by which the taken-for-granted mundanity of the everyday may be transcended in the direction of – 
+<br>
+<br>
+I said, yes, maybe. 
+<br>They said, we don’t like it. 
+<br>
+I said, that’s sound. 
+<br>
+They said, it’s a bloody shame! 
+<br>I said, it is.
+    </p> 
+    
+    <a href="grid4.html">
+      
+       <img id = "shake" src="assets/img/bus.png" height= 400 width=300>
+    </a>
+    
+    <div class="pic2">
+        <img src="assets/img/school.png" height= 300 width=300>
+    </div>
+    
+    
+    
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+  
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    
+
+    <div class="one"></div>
+    <div class="two"></div>
+
+   
+    <div class="three"></div>
+    <div class="three"></div>
+
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+ 
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+  
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    
+    <div class="one"></div>
+    <div class="two"></div>
+ 
+
+</body>
+</html>

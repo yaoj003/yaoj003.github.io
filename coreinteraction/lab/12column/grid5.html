@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<meta charset="UTF-8">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="assets/js/sketch.js"></script>
+
+<title>12 COL</title>
+</head>
+<script>
+//for each box figure out it's x/y position in relation to the container...then set the image background to that position
+$(document).ready(function(){
+	$("#container div").each(function(){
+		//set the background image for each div to the repositioned main background image
+		var bgPositionString = -($(this).position().left) + "px " + -($(this).position().top) + "px";
+		if ($(this).hasClass("three")){
+			$(this).css("background-image","url('assets/img/school5.jpg')");
+			$(this).css("background-position",bgPositionString); 
+	
+	}
+		$('img').mouseover(function(){
+		$('.three').css("background-image", "url('assets/img/school2.png')");
+		
+	});
+	
+// 		$('img').mouseover(function(){
+// 		$('three').css("background-image", "url('assets/img/school5.jpg')");
+	
+// 	});
+	
+
+
+	});
+});
+
+	
+</script>
+<style type="text/css">
+    body{
+        background-color: white;
+       overflow: hidden;
+    }
+    
+    #container{
+        padding: 3% 5% 3% 5%;
+    }
+    
+    .one{
+        height:100px;
+        width: 100px;
+        float:left;
+        z-index: -1;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #3d9ee7;
+    }
+      .two{
+        height:100px;
+        width: 100px;
+        float:left;
+        z-index: -1;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #3d9ee7;
+    }
+    
+     .three{
+        height:100px;
+        width: 100px;
+        float:left;
+        z-index: -1;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #3d9ee7;
+    }
+    
+    a{
+        position: absolute;
+        z-index: 2;
+        margin-left: 0%;
+        margin-top: 18%;
+         -webkit-transform: rotate(); 
+        transform: rotate(340deg);
+    }
+    
+    img{
+        position: absolute;
+        z-index: 2;
+        left: 65%;
+        top: 30%;
+         -webkit-transform: rotate(); 
+        transform: rotate(10deg);
+    }
+    
+    p{
+        color:black;
+        top: 72%;
+        left: -5%;
+    }
+    
+</style>
+
+<body>
+    
+    <a href="index.html">
+    <img id= "shake" src= "assets/img/gerbils.png" width= 300px height=200px>
+    </a>
+    
+    <p>
+       The children cheered wildly.
+    </p>
+    
+    <img src= "assets/img/stop.png" width= 400px height=400px>
+     
+    <div id="container">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="three"></div>
+    
+    <div class="three"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    
+    <div class="three"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    
+    <div class="three"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    
+    <div class="one"></div>
+    <div class="one"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    <div class="three"></div>
+    
+    <div class="one"></div>
+    <div class="two"></div>
+    </div>
+</body>
+</html>

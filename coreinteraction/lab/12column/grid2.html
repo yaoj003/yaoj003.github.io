@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<meta charset="UTF-8">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="assets/js/sketch.js"></script>
+
+<title>12 COL</title>
+</head>
+<script>
+//for each box figure out it's x/y position in relation to the container...then set the image background to that position
+$(document).ready(function(){
+	$("#container div").each(function(){
+		//set the background image for each div to the repositioned main background image
+		var bgPositionString = -($(this).position().left) + "px " + -($(this).position().top) + "px";
+		if ($(this).hasClass("one")){
+			$(this).css("background-image","url('assets/img/classpic2.gif')");
+			$(this).css("background-position",bgPositionString); 
+		
+		}
+		
+		$('#container').mouseenter(function(){
+		$('.one').css("background-image", "url('assets/img/classpic2.gif')");
+	
+	});
+	
+		$('#container').mouseleave(function(){
+		$('.one').css("background-color", "#a56454");
+	
+	});
+	
+	
+});
+	});
+
+	
+</script>
+    <style>
+        main{
+            margin-right: 10%;
+            margin-left:10%;
+            padding: 10%;
+            width: 10%;
+        }
+        body {
+            background-color: #a56454;
+          
+        }
+        
+        #container{
+            padding-left:35%;
+            padding-top:2%;
+        }
+        
+        
+       .one{
+        width:120px;
+        height:120px;
+        float: left;
+        background-image: url("assets/img/classpic2.gif");
+  
+    }
+    
+    .two{
+        width:120px;
+        height:120px;
+        background: #a5776f;
+        float:left;
+        
+}
+
+img{
+     position: absolute;
+            top: 50%;
+            left: 5%;
+            z-index: 2;
+             -webkit-transform: rotate(); 
+        transform: rotate(357deg);
+}
+
+p{
+    position: absolute;
+    z-index:2;
+    top:60%;
+    left: 25%;
+    
+}
+</style>
+
+
+
+
+<body>
+    
+    <a href="grid3.html">
+         <img id="shake" src="assets/img/classpic2.gif" height= 250 width=400>
+    </a>
+   
+    <p>
+        And finally the tragedy.
+    </p>
+    <div id= "container">
+ 
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    
+    
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="one"></div>
+    
+
+    </div>
+
+   
+    </div>
+
+</body>
+</html>

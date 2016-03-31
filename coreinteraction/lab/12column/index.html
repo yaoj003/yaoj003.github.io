@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<meta charset="UTF-8">
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="assets/js/sketch.js"></script>
+
+<title>12 COL</title>
+</head>
+
+<script>
+//for each box figure out it's x/y position in relation to the container...then set the image background to that position
+$(document).ready(function(){
+	$("#container div").each(function(){
+		//set the background image for each div to the repositioned main background image
+		var bgPositionString = -($(this).position().left) + "px " + -($(this).position().top) + "px";
+		if ($(this).hasClass("three")){
+			$(this).css("background-image","url('assets/img/school3.JPG')");
+			$(this).css("background-position",bgPositionString); 
+		}
+		if ($(this).hasClass("two")){
+			$(this).css("background-image","url('assets/img/gate2.jpg')");
+			$(this).css("background-position",bgPositionString); 
+		}
+	
+	
+		$('.two').hover(function(){
+		$('.three').css("background-image", "url('assets/img/school3.JPG')");
+		$('.two').css("background-image", "url('assets/img/gate2.jpg')");
+
+	});
+	
+	
+	
+});
+	});
+
+	
+</script>
+
+
+<style type="text/css">
+	body{
+		background-color: #8a362b;
+		overflow:hidden;
+	}
+	
+	#container{
+		padding: 0% 15% 10% 15%;	
+	}
+	
+	 .one{
+        width:100px;
+        height:100px;
+        background: #8a362b;
+        float:left;
+        top: 50%;
+        z-index: -1;
+     
+    }
+    
+    .two{
+        width:100px;
+        height:100px;
+        
+        float:left;
+        top: 50%;
+        z-index: -1;
+     
+    }
+    
+    .three{
+        width:100px;
+        height:100px;
+       
+        float:left;
+        top: 50%;
+        z-index: -1;
+    }
+    
+    a{
+    	position: absolute;
+		z-index: 2;
+		margin-top: 6%;
+		margin-left:10%;
+		 -webkit-transform: rotate(); 
+        transform: rotate(5deg);
+    }
+    
+    #fire{
+    	position: absolute;
+		z-index: 2;
+		margin-top: 15%;
+		margin-left:65%;
+		-webkit-transform: rotate(); 
+        transform: rotate(45deg);
+    }
+    
+    
+</style>
+
+<body>
+	
+	<a href= "grid2.html">
+	<img id="shake" src= "assets/img/grave.png" height="600px" width="500px">
+		</a>
+		
+		<div id="fire">
+		<img  src= "assets/img/fire.png" height="400px" width="350px">
+		</div>
+		
+		<p>
+			And the trees all died. 
+			They were orange trees. 
+			<br>I don’t know why they died, 
+			they just died. 
+		</p>
+	
+		<div id="container">
+		<div class="three"></div>
+	    <div class="one"></div>
+	    <div class="three"></div>
+	    <div class="one"></div>
+	    <div class="one"></div>
+	    <div class="one"></div>
+	    <div class="one"></div>
+	    <div class="two"></div>
+	    
+	    <div class="three"></div>
+		<div class="two"></div>
+	    <div class="one"></div>
+	    
+	    <div class="two"></div>
+	   
+	    
+	    <div class="one"></div>
+	    <div class="two"></div>
+	    <div class="three"></div>
+	    
+	    <div class="one"></div>
+	  	<div class="one"></div>
+	  	<div class="one"></div>
+	    <div class="three"></div>
+	    <div class="two"></div>
+	    <div class="three"></div>
+	    <div class="two"></div>
+	    <div class="one"></div>
+	    <div class="two"></div>
+	    <div class="one"></div>
+	    <div class="one"></div>
+	    <div class="one"></div>
+	    <div class="one"></div>
+	    <div class="three"></div>
+	    <div class="one"></div>
+	    <div class="one"></div>
+	    <div class="one"></div>
+	    </div>
+
+
+
+</body>
+</html>
