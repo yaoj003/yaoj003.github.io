@@ -21,17 +21,25 @@ $(document).ready(function(){
 			$(this).css("background-position",bgPositionString); 
 	
 	}
-		$('img').mouseover(function(){
+		
+	    $('.three').mouseenter(function(){
 		$('.three').css("background-image", "url('assets/img/school2.png')");
 		
 	});
 	
-// 		$('img').mouseover(function(){
-// 		$('three').css("background-image", "url('assets/img/school5.jpg')");
+		$('.three').mouseleave(function(){
+		$('.three').css("background-image", "url('assets/img/school5.jpg')");
+	   	
 	
-// 	});
+	});
 	
-
+    	$('p').mouseenter(function(){
+    	    	$('.three').css("background-image","url('assets/img/gas.jpg')");
+    	    		$('body').css("background-color","#181818");
+    	    	
+    	    	
+    	
+    	});
 
 	});
 });
@@ -40,8 +48,9 @@ $(document).ready(function(){
 </script>
 <style type="text/css">
     body{
-        background-color: white;
+        background-color: #b8b8b8;
        overflow: hidden;
+       
     }
     
     #container{
@@ -53,18 +62,13 @@ $(document).ready(function(){
         width: 100px;
         float:left;
         z-index: -1;
-        border-style: solid;
-        border-width: 2px;
-        border-color: #3d9ee7;
     }
       .two{
         height:100px;
         width: 100px;
         float:left;
         z-index: -1;
-        border-style: solid;
-        border-width: 2px;
-        border-color: #3d9ee7;
+        
     }
     
      .three{
@@ -72,9 +76,7 @@ $(document).ready(function(){
         width: 100px;
         float:left;
         z-index: -1;
-        border-style: solid;
-        border-width: 2px;
-        border-color: #3d9ee7;
+        
     }
     
     a{
@@ -96,9 +98,10 @@ $(document).ready(function(){
     }
     
     p{
-        color:black;
+        
         top: 72%;
         left: -5%;
+        color:white;
     }
     
 </style>

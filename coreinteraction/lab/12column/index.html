@@ -27,10 +27,16 @@ $(document).ready(function(){
 		}
 	
 	
-		$('.two').hover(function(){
+		$('.three').mouseenter(function(){
+		$('.three').css("background-image", "url('assets/img/bad.gif')");
+		$('.two').css("background-image", "url('assets/img/bad.gif')");
+		
+	});
+	
+		$('.three').mouseleave(function(){
 		$('.three').css("background-image", "url('assets/img/school3.JPG')");
 		$('.two').css("background-image", "url('assets/img/gate2.jpg')");
-
+		
 	});
 	
 	
@@ -97,6 +103,11 @@ $(document).ready(function(){
 		margin-left:65%;
 		-webkit-transform: rotate(); 
         transform: rotate(45deg);
+    }
+    
+    p{
+    	margin-left: 6%;
+    	margin-top:21%;
     }
     
     

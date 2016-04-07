@@ -26,18 +26,33 @@ $(document).ready(function(){
 			$(this).css("background-position",bgPositionString); 
 		}
 		
-		$('#container').mouseenter(function(){
+		$('.one').mouseenter(function(){
 		$('.one').css("background-image", "url('assets/img/school2.png')");
 		$('.two').css("background-image", "url('assets/img/school2.png')");
 	});
 	
-		$('#container').mouseleave(function(){
-		$('.one').css("background-image", "url('assets/img/school2.png')");
+		$('.one').mouseleave(function(){
+		$('.one').css("background-image", "url('assets/img/school4.JPG')");
 		$('.two').css("background-image", "url('assets/img/school6.jpg')");
 	});
 	
 	
 });
+
+var showText = function (target, message, index, interval) {    
+  if (index < message.length) { 
+      console.log(showText);
+    $(target).append(message[index++]); 
+    setTimeout(function () { showText(target, message, index, interval); }, interval); 
+  } 
+}
+    
+$(function () { 
+ 
+  showText("#msg", "we require an assertion of value, we are frightened. we require an assertion of value, we are frightened. we require an assertion of value, we are frightened. we require an assertion of value, we are frightened. we require an assertion of value, we are frightened. we require an assertion of value, we are frightened. we require an assertion of value, we are frightened. we require an assertion of value, we are frightened. we require an assertion of value, we are frightened.", 0, 50);    
+ 
+}); 
+
 	});
 
 	
@@ -89,27 +104,30 @@ $(document).ready(function(){
         transform: rotate(15deg);
         }
         
-        p{
+        #msg{
+    
+            position: absolute;
+            z-index: 3;
             left: -10%;
-            top: 30%;
+            right: 40%;
+            top:50%;
+            font: Courier;
+            font-family: monospace;
+            font-size: 25px;
+            padding-top: 2%;
+            padding-left: 15%;
+            text-align: left;
+            color: white;
+            z-index: 2;
+            position: absolute;
         }
 </style>
 
 <body>
     
-    <p>
-        we require an assertion of value,<br>
-        we require an assertion of value,<br>
-        we require an assertion of value,<br>
-        we require an assertion of value,<br>
-        we require an assertion of value,<br>
-        we require an assertion of value,<br>
-       
-        we require an assertion of value, we are frightened.<br>
-        we require an assertion of value, we are frightened.<br>
-        we require an assertion of value, we are frightened.<br>
-        we require an assertion of value, we are frightened.
-    </p>
+   
+    
+
     <a href="grid5.html">
        <img id = "shake" src="assets/img/door.png" width=200px height= 300px>
     </a>
@@ -174,10 +192,15 @@ $(document).ready(function(){
     <div class="two"></div>
     <div class="one"></div>
     <div class="two"></div>
-    <div class="one"></div>
-  
+   
+      
+   <div id="msg"/> 
+<span id="text_target"></span>
+</div>
 
-    </div>
+
+
+    
      
 </body>
 </html>
