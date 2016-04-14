@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0 auto;
+}
+body{
+  font-family: monospace;
+  height: 100%;
+  font-size: 25px;
+  overflow: hidden;
+  color: white;
+  overflow-y: scroll;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+
+}
+
+
+img{
+  position: absolute;
+  z-index: -1;
+
+}
+
+#red{
+  left: 60%;
+  top: 24%;
+  height: 170px;
+  width: 170px;
+}
+
+#orange{
+  left: 75%;
+  top: -5%;
+  height: 350px;
+  width: 350px;
+}
+
+#yellow{
+  left: 60%;
+  top: 13%;
+  height: 120px;
+  width: 120px;
+}
+
+#pink{
+  left: 68%;
+  top: 28%;
+  height: 200px;
+  width: 200px;
+}
+
+#purple{
+  left: 40%;
+  top: -5%;
+  height: 300px;
+  width: 300px;
+}
+
+#blue{
+  left: 35%;
+  top:25%;
+  height: 230px;
+  width: 250px;
+}
+
+#grass{
+  left: 60%;
+  top: 10%;
+  height: 500px;
+  width: 483px;
+}
+
+#wire{
+  left:50%;
+  top:15%;
+}
+
+select {
+    
+   font-family: monospace;
+   font-size: 23px;
+   border: none;
+    cursor: pointer;
+    background-color: #222222;
+    color: white;
+    margin-left: 3%;
+   
+   
+}
+
+
+input[type=submit] {
+   font-family: monospace;
+   font-size: 25px;
+   border: none;
+    cursor: pointer;
+    background-color: #222222;
+    color: white;
+
+    margin-left: 55%;
+}
+
+p{
+  font-size: 45px;
+  margin-left: 3%;
+  margin-top: 5%;
+}
+
