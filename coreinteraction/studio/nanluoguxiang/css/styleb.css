@@ -1,0 +1,456 @@
+html{
+    height: 100%;
+    	  
+}
+
+body{
+    margin:0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#largeWrapper{
+	height:100%;
+	width: 100%;
+	margin: 0px;
+	position: relative;
+
+	
+	
+}
+
+#lgBack{
+    position:fixed;
+    overflow:hidden;
+    background-image:url('../img/backimg.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: fixed;
+    width:100%;
+    height:100%;
+    z-index:-100;
+
+}
+
+#content{
+    margin-left: 2%;
+    font-family: "Futura-CondensedExtraBold", sans-serif, "华文黑体", STHeit;
+    color: #f6f3e5;
+    font-size: 100px; 
+    
+}
+
+#smallWrapper{
+	margin:0px;
+	padding:0px;
+	background-size:cover;
+	height:670px;
+	width:100%;
+	position: relative;
+	overflow: hidden;
+	background-image:url('../img/hutong.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: fixed;
+	
+}
+
+.subtitles{
+    font-family: "Futura-CondensedBold", sans-serif, "华文黑体", STHeit;
+    color: black;
+    font-size: 14px;
+    color: #f6f3e5;
+    position: absolute;
+    z-index: 2;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#pinksub{
+    margin-top: 110px;
+}
+
+#greensub{
+    margin-top: 245px;
+}
+
+#redsub{
+    margin-top: 455px;
+}
+
+#womanpink{
+   width:260px;
+   z-index: 1;
+   left: 10%;
+   top: 5px;
+}
+#mangreen{
+    width: 250px;
+   z-index: 1;
+   left: 20%;
+   top: 180px;
+}
+#womanred{
+   width: 250px;
+   z-index: 1;
+   left: 13%;
+   top: 390px
+}
+
+@media (min-width: 400px) { /*ANYTHING ABOVE 500PX */
+	#largeWrapper{ display: block; margin: 0 auto;} /* SHOW */
+	#smallWrapper { display: none; }	 /*HIDE */
+}
+
+
+@media only screen and (max-width: 400px) { /*ANYTHING BELOW 500PX */
+    #smallWrapper { display: block; margin: 0 auto; } /* SHOW */
+	#largeWrapper{ display: none; } /* HIDE */
+	
+    }
+    
+
+
+#header{
+    margin-top:40px;
+    width:100%;
+    font-size: 35px;
+    text-align: left;
+    color: #d6d0b4;
+    position: fixed;
+    z-index:-13;
+   
+}
+
+#oldbeijing{
+  text-align: right;
+  margin-left:20%;
+  top: 100px;
+  position: absolute;
+}
+
+img{
+    z-index: -1;
+    position: absolute;
+}
+
+#bwphoto{
+   right: 14%;
+   top: 780px;
+   width: 500px;
+}
+
+#newyear{
+    right:10%;
+    top:120px;
+    width: 270px
+}
+
+#worker{
+    left:10%;
+    top:1000px;
+    width: 350px;
+    z-index:-1;
+}
+
+#cig{
+    top: 400px;
+    width: 400px;
+    left:10%;
+}
+
+.review{
+    position: absolute;
+    color: #f6f3e5;
+    font-size: 17px;
+    text-align: left;
+    line-height: 125%;
+    font-family: "Futura-CondensedBold", sans-serif, "华文黑体", STHeit;
+}
+
+h{
+    font-family: "Futura-CondensedExtraBold", sans-serif, "华文黑体", STHeit;
+    font-style: italic;
+    line-height:200%;
+}
+
+#oldbeijingreview{
+    margin-left:10%;
+    margin-right:55%;
+    top: 1630px;
+
+}
+
+#mom{
+    width: 400px;
+    right:18%;
+    top:1400px;
+}
+
+#baby{
+    width: 450px;
+    left:10%;
+    top:1900px;
+}
+
+#beer{
+     width: 390px;
+    left:50%;
+    top:2060px;
+}
+
+#review3{
+    top:2650px;
+    margin-left:60%;
+    margin-right:10%;
+    
+}
+
+#flowergirl{
+    width: 400px;
+    left: 10%;
+    top:2430px;
+}
+
+#body{
+    width: 300px;
+    left: 60%;
+    top: 2950px;
+}
+
+#shanghai{
+    width: 400px;
+    left: 10%;
+    top: 3350px;
+}
+
+#fanwoman{
+    width: 270px; 
+    left: 15%;
+    top: 3950px;
+}
+
+#worker2{
+    width: 430px;
+    left: 50%;
+    top: 3600px;
+}
+
+#fish{
+    width: 230px;
+    left: 68%;
+    top: 4250px;
+}
+
+#review2{
+    top:4050px;
+    margin-left:47%;
+    margin-right:18%;
+}
+
+
+
+#olympic{
+    top: 4630px;
+    left:8%;
+    position: relative;
+   
+}
+
+.fuwa{
+    margin-top: 4700px;
+    margin-left:-15%;
+}
+
+#blue{
+    width: 200px;
+    left:20%;
+    top: 430px;
+     z-index: 5;
+}
+
+#black{
+    width:350px;
+    left: 28%;
+    top: 380px;
+    z-index: 8;
+}
+
+#red{
+    width: 330px;
+    left:50%;
+    top:440px;
+    z-index: 9;
+}
+
+#yellow{
+    width: 280px;
+    left: 70%;
+    top:430px;
+    z-index: 8;
+}
+
+#green{
+    width:400px;
+    top:420px;
+    left:80%;
+     z-index: 5;
+}
+
+@-webkit-keyframes fuwa {
+      0% { -webkit-transform: rotate(0deg); }
+     10% { -webkit-transform: rotate(-2deg); }
+     20% { -webkit-transform: rotate(0deg); }
+     30% { -webkit-transform: rotate(2deg); }
+     40% { -webkit-transform: rotate(0deg); }
+     50% { -webkit-transform: rotate(-2deg); }
+     60% { -webkit-transform: rotate(0deg); }
+     70% { -webkit-transform: rotate(2deg); }
+     80% { -webkit-transform: rotate(0deg); }
+     90% { -webkit-transform: rotate(-2deg); }
+    100% { -webkit-transform: rotate(0deg); }
+     
+     }
+     
+.fuwa:hover {
+-webkit-animation-name: fuwa;
+-webkit-animation-duration: 0.8s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-transform-origin: 50% 100%;
+  }
+  
+.welcome{
+    top: 5410px;   
+    margin-left: -15%;
+    position: absolute;
+    font-size: 50px;
+}  
+
+  
+#flag{
+    width: 330px;
+    top:4650px;
+    right:13%;
+    z-index: 8;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+}
+
+#flag:hover{
+    transform: translate(-200px,0);
+    -webkit-transform: translate(-200px,0); 
+}
+
+#commercial{
+  top: 5580px;
+  margin-left: 15%;
+  position: absolute;
+  
+}
+
+#fan{
+    width: 450px;
+    top:240px;
+    left:-20%;
+}
+
+#bowl{
+    width: 390px;
+    top:650px;
+    left:75%;
+}
+
+#chain{
+    width:500px;
+    top: 10px;
+    left:130%;
+}
+
+#panda{
+    width:500px;
+    top: 950px;
+    left:100%;
+}
+
+#review4{
+    top: 1120px;
+    margin-left: -15%;
+    margin-right: 10%;
+    
+}
+
+#review5{
+    top: 2600px;
+    margin-left: 25%;
+    margin-right:-10%;
+}
+
+#bike{
+    width:400px;
+    top: 1330px;
+    left:-10%;
+    
+}
+
+#toy1{
+    width:450px;
+    top:1650px;
+    left:100%;
+}
+
+#toy2{
+    width:300px;
+    top:2150px;
+    left:60%;
+}
+
+#soda{
+    width:800px;
+    top:1700px;
+    left:-60%;
+}
+
+#whiterabbit{
+    width:600px;
+    top: 2300px;
+    left:100%;
+}
+
+#shirt{
+    width:620px;
+    top:2600px;
+    left:-15%;
+}
+
+#qipas{
+    width:600px;
+    top:3000px;
+    left:100%;
+    
+}
+
+#xitang{
+    width:500px;
+    top:3400px;
+    left: -25%;
+}
+
+#review6{
+    top: 3400px;
+}
+
+#stamp{
+    top: 3650px;
+    width:500px;
+}
+
+#bing{
+    top:4000px;
+    width: 320px;
+    left: -30%;
+    
+}

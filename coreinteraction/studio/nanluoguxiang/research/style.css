@@ -1,0 +1,77 @@
+html{
+    background-color: #a0c9d7;
+    font-family: 'Josefin Slab', serif;
+    margin: 2%;
+    text-align: left;
+    font-size: 16pt;
+    
+}
+
+#title{
+    font-size: 60pt;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.3pt;
+    color: white;
+    position: absolute;
+    left: 10%;
+    right:10%;
+    z-index: 6;
+}
+
+#bird2{
+    width:640px;
+    z-index: 3;
+    margin-left: 22%;
+    margin-top: 150px;
+    position: absolute;
+}
+
+#man{
+    margin-top: 110px;
+    width: 350px;
+    margin-left:62%;
+    z-index:2;
+    position: absolute;
+}
+
+#letter{
+    margin-top:90px;
+    width: 400px;
+    margin-left: 7%;
+    z-index: 1;
+    position: absolute;
+}
+
+@-webkit-keyframes shake {
+      0% { -webkit-transform: rotate(0deg); }
+     10% { -webkit-transform: rotate(-2deg); }
+     20% { -webkit-transform: rotate(0deg); }
+     30% { -webkit-transform: rotate(2deg); }
+     40% { -webkit-transform: rotate(0deg); }
+     50% { -webkit-transform: rotate(-2deg); }
+     60% { -webkit-transform: rotate(0deg); }
+     70% { -webkit-transform: rotate(2deg); }
+     80% { -webkit-transform: rotate(0deg); }
+     90% { -webkit-transform: rotate(-2deg); }
+    100% { -webkit-transform: rotate(0deg); }
+     
+     }
+     
+.shake:hover {
+-webkit-animation-name: shake;
+-webkit-animation-duration: 0.8s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-timing-function: linear;
+-webkit-transform-origin: 50% 100%;
+  }
+  
+
+
+  h{
+    font-style: bold;
+    font-size: 20pt;
+  }
+  
+
+
