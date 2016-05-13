@@ -100,13 +100,13 @@ body{
    top: 390px
 }
 
-@media (min-width: 400px) { /*ANYTHING ABOVE 500PX */
+@media (min-width: 375px) { /*ANYTHING ABOVE 500PX */
 	#largeWrapper{ display: block; margin: 0 auto;} /* SHOW */
 	#smallWrapper { display: none; }	 /*HIDE */
 }
 
 
-@media only screen and (max-width: 400px) { /*ANYTHING BELOW 500PX */
+@media only screen and (max-width: 375px) { /*ANYTHING BELOW 500PX */
     #smallWrapper { display: block; margin: 0 auto; } /* SHOW */
 	#largeWrapper{ display: none; } /* HIDE */
 	
